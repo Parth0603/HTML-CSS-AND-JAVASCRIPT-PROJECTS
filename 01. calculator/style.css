@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+}
+.full-main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 28, 28);
+}
+.layout .not{
+    cursor: not-allowed;
+}
+.layout {
+    scale: 1.5;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 130px;
+    width: 200px;
+    display: grid;
+    grid-template-areas:
+        "z z z z "
+        "a a a a"
+        "a a a a"
+        "a a a a"
+        "a a a a"
+        "q q r s";
+    outline: 4px solid white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+.layout .zero {
+    grid-area: q;
+    border-radius: 20px;
+    width:calc(100% - 20px);
+    align-items: flex-start;
+}
+.btn {
+    width: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: #1C1C1C;
+}
+.orange{
+    background-color: #ff9500;
+}
+.light-gray{
+    background-color: #D4D4D2;
+    color: black;
+    
+}
+.output{
+    font-size: 40px;
+    margin-right: 10px;
+    grid-area: z;
+    height: 50px;
+    display: flex;    
+    justify-content: end;
+    align-items: center;
+}
