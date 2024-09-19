@@ -4,7 +4,7 @@ const cursor = document.querySelector(".cursor")
 console.log(typedTextSpan);
 console.log(cursor);
 
-const words = ["Awesome","😎😂😂", "Fun", "Cool", "Life", "Famous", "Weird"]
+const words = ["Awesome", "Fun", "Cool", "Life", "Famous", "Weird"]
 
 const typingDelay = 200
 const erasingDelay = 200
