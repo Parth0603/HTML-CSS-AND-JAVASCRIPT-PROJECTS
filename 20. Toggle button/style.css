@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+:root {
+    --linearGradient: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+body {
+    transition: 1s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.box {
+    height: 100px;
+    width: 200px;
+    background: white;
+    border-radius: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    height: 112px;
+    position: absolute;
+    overflow: hidden;
+    width: 212px;
+    transition: 1s;
+    background: var(--linearGradient);
+}
+
+.circle {
+    height: 96%;
+    width: 48%;
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s;
+}
+.circle.dark {
+    left: 0;
+    transition: 1s;
+    background: black;
+}
+.circle.light {
+    transition: 1s;
+    background: white;
+    right: 0;
+}
+.message {
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    width: auto;
+    padding: 20px;
+    font-weight: 900;
+
+}
